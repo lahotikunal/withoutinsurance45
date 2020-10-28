@@ -152,7 +152,7 @@ button.addEventListener('click',function()
         }
   if(potValue<0){
     
-    alert("game over!! not enough money left in the pot, press the Next Game button to play again")
+    alert("game over!! not enough money left in the pot, press the Next Game button ")
   }
   document.getElementById("pot").innerHTML = potValue;
      
