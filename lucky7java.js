@@ -3,7 +3,7 @@ var diceValue1,
 var diceValue,
     potValue,
     radioValue = '=7',
-    bidValue = 30;
+    bidValue = 15;
     //premium = 50;
 
 function myRadioValue(dice) {
@@ -102,10 +102,6 @@ rules.addEventListener('click', function() {
   document.getElementById('rules').style.display = 'none';
 
 });
-next_game.addEventListener('click',function(){
-   if(potValue<0)
-        {location.href = "https://lahotikunal.github.io/insurance_sty/";}
-});
 //rules
 
 button.addEventListener('click',function()
@@ -152,11 +148,10 @@ button.addEventListener('click',function()
         }
   if(potValue<0){
     
-    alert("game over!! not enough money left in the pot, press the Next Game button ")
+    alert("game over!! not enough money left in the pot, hit refresh to play again")
   }
   document.getElementById("pot").innerHTML = potValue;
      
 });
-
 
 
